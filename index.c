@@ -7,7 +7,9 @@
 #include <stdio.h>
 
 int main() {
-    int d = 1;
+    int d = 0;
+
+    scanf("%d", &d);
 
     switch(d) {
         case 1: {
