@@ -7,8 +7,15 @@
 #include <stdio.h>
 
 int main() {
-    int d = 1;
+    int d = 0;
     const char* days[] = {"Понеділок", "Вівторок", "Середа", "Четвер", "Пʼятниця", "Субота", "Неділя"};
+
+    scanf("%d", &d);
+    if(d < 1 || d > 7) {
+        printf("Некоректні дані");
+
+        return -1;
+    }
 
     printf(days[d - 1]);
 
