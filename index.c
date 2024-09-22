@@ -7,10 +7,13 @@
 #include <stdio.h>
 
 int main() {
-    int d = 1;
+    int d = 0;
+
+    scanf("%d", &d);
 
     if(d < 1 || d > 7) {
         printf("Некоректні дані");
+        return -1;
     } else if(d == 1) {
         printf("Понеділок");
         return 0;
@@ -29,7 +32,7 @@ int main() {
     } else if(d == 6) {
         printf("Субота");
         return 0;
-    } else if(d == 7) {
+    } else {
         printf("Неділя");
         return 0;
     }
