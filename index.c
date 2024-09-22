@@ -9,37 +9,31 @@
 int main() {
     int d = 1;
 
-    switch(d) {
-        case 1: {
-            printf("Понеділок");
-            break;
-        }
-        case 2: {
-            printf("Вівторок");
-            break;
-        }
-        case 3: {
-            printf("Середа");
-            break;
-        }
-        case 4: {
-            printf("Четвер");
-            break;
-        }
-        case 5: {
-            printf("Пʼятниця");
-            break;
-        }
-        case 6: {
-            printf("Субота");
-            break;
-        }
-        case 7: {
-            printf("Неділя");
-            break;
-        }
-        default: {
-            printf("Значення d повинно бути більше нуля, але менше за 8!");
-        }
+    if(d == 1) {
+        printf("Понеділок");
+        return 0;
+    } else if(d == 2) {
+        printf("Вівторок");
+        return 0;
+    } else if(d == 3) {
+        printf("Середа");
+        return 0;
+    } else if(d == 4) {
+        printf("Четвер");
+        return 0;
+    } else if(d == 5) {
+        printf("Пʼятниця");
+        return 0;
+    } else if(d == 6) {
+        printf("Субота");
+        return 0;
+    } else if(d == 7) {
+        printf("Неділя");
+        return 0;
+    } else {
+        printf("Значення d повинно бути більше нуля, але менше за 8!");
+        return -1;
     }
+
+    return 0;
 }
