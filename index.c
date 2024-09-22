@@ -8,32 +8,9 @@
 
 int main() {
     int d = 1;
+    const char* days[] = {"Понеділок", "Вівторок", "Середа", "Четвер", "Пʼятниця", "Субота", "Неділя"};
 
-    if(d == 1) {
-        printf("Понеділок");
-        return 0;
-    } else if(d == 2) {
-        printf("Вівторок");
-        return 0;
-    } else if(d == 3) {
-        printf("Середа");
-        return 0;
-    } else if(d == 4) {
-        printf("Четвер");
-        return 0;
-    } else if(d == 5) {
-        printf("Пʼятниця");
-        return 0;
-    } else if(d == 6) {
-        printf("Субота");
-        return 0;
-    } else if(d == 7) {
-        printf("Неділя");
-        return 0;
-    } else {
-        printf("Значення d повинно бути більше нуля, але менше за 8!");
-        return -1;
-    }
+    printf(days[d - 1]);
 
     return 0;
 }
