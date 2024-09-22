@@ -9,7 +9,9 @@
 int main() {
     int d = 1;
 
-    if(d == 1) {
+    if(d < 1 || d > 7) {
+        printf("Некоректні дані");
+    } else if(d == 1) {
         printf("Понеділок");
         return 0;
     } else if(d == 2) {
@@ -30,9 +32,6 @@ int main() {
     } else if(d == 7) {
         printf("Неділя");
         return 0;
-    } else {
-        printf("Значення d повинно бути більше нуля, але менше за 8!");
-        return -1;
     }
 
     return 0;
